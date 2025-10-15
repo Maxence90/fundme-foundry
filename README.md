@@ -37,8 +37,8 @@
 ## 快速上手
 
 ```
-git clone https://github.com/Maxence90/foundry-fund-me-f25
-cd foundry-fund-me-f25
+git clone https://github.com/Maxence90/fundme-foundry
+cd fundme-foundry
 make
 ```
 

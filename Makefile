@@ -18,6 +18,9 @@ build:; forge build
 
 format :; forge fmt
 
+deploy:
+	@forge script script/DeployFundMe.s.sol:DeployFundMe $(shell echo $(NETWORK_ARGS))
+
 deploy-sepolia:
 	forge script script/DeployFundMe.s.sol --broadcast --fork-url $(SEPOLIA_RPC_URL) 
 	--private-key $(PRIVATE_KEY) --broadcast --verify --etherscan-api-key $

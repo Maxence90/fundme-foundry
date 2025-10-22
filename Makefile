@@ -8,9 +8,9 @@ clean  :; forge clean
 remove :; rm -rf .gitmodules && rm -rf .git/modules/* && rm -rf lib && touch .gitmodules && git add . && git commit -m "modules"
 
 install :
-	forge install cyfrin/foundry-devops@latest --no-commit
-	forge install smartcontractkit/chainlink-brownie-contracts@latest --no-commit  
-	forge install foundry-rs/forge-std@latest --no-commit
+	forge install cyfrin/foundry-devops@v0.4.0
+	forge install smartcontractkit/chainlink-brownie-contracts@v1.3.0
+	forge install foundry-rs/forge-std@v1.11.0
 # Update Dependencies
 update:; forge update
 
